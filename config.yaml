@@ -1,0 +1,27 @@
+Note: "Vanilla run"
+
+# wandb settings
+log_wandb: true
+entity_name: "midog25"
+project_name: "DG-Origin"
+run_name: "LODO-Scanner-AMC"
+
+# Paths
+csv_file: "/users/student/rs/kaustubh.atey/Projects/MIDOG25/T2_clf/MIDOG25_Atypical_Classification_Train_Set.csv"
+data_dir: "/users/student/rs/kaustubh.atey/Projects/MIDOG25/T2_clf/MIDOG25_Binary_Classification_Train_Set"
+ckpt_path: "/users/student/rs/kaustubh.atey/Projects/MIDOG25/T2_clf/midog25/Origin_DG/checkpoints"
+
+# Hyperparameters
+batch_size: 128
+epochs: 500
+lr: 0.001
+lr_patience: 3
+lr_factor: 0.5
+es_patience: 5
+warmup_epochs: 10
+
+# Other settings
+val_every: 5
+gpu_id: "3"
+train_domains: ["VMU Vienna", "UMC Utrecht", "FU Berlin"]
+test_domains: ["AMC New York"]
